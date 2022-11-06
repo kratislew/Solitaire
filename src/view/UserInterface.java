@@ -146,8 +146,7 @@ public class UserInterface extends JFrame implements ActionListener, MouseListen
 		
 		//set score
 		totalScore = 0;
-		
-		
+		scoreLabel.setText("SCORE: 0");		
 		
 		//add listener to all cards
 		for(Card c : solitaire.deck.deck) {
