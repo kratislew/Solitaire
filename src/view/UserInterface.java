@@ -353,9 +353,10 @@ public class UserInterface extends JFrame implements ActionListener, MouseListen
 			repaint();
 			
 			if(solitaire.winCon()) {
-				JOptionPane.showMessageDialog(this, "YOU WON IN " + timerLabel.getText() + "WITH A SCORE OF" + totalScore + "!!!");
 				//stop timer
 				gameTimer.stop();
+				JOptionPane.showMessageDialog(this, "YOU WON IN " + timerLabel.getText() + " WITH A SCORE OF " + totalScore + "!!!");
+				
 				reset();
 			}
 		}
